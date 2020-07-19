@@ -19,6 +19,7 @@ end
       puts badge
   end
  assign_rooms(names).each do |assignment|
+   puts assignment
  end 
  end
 
