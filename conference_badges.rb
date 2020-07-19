@@ -10,7 +10,7 @@ def batch_badge_creator(attendees)
   attendees.collect {|name| badge_maker(name)}
 end
 
-def assign_rooms(attendees)
+def room_assignments(attendees)
   attendees.each_with_index.map {|name,index|"Hello, #{name}! You'll be assigned to room #{index+1}!"}
 end
 
@@ -18,7 +18,7 @@ end
     batch_badge_creator(names).each do |badge|
       puts badge
   end
- assign_rooms(names).each do |assignment|
+ room_assignments(names).each do |assignment|
  end 
  end
 
